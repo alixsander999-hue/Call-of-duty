@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>داستان Amir GPT</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    direction: rtl;
+    background: url('https://i.ibb.co/xhNhQ6N/space-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+  }
+  .overlay {
+    background: rgba(0,0,0,0.65);
+    min-height: 100vh;
+    padding: 20px;
+  }
+  h1, h2 {
+    text-align: center;
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 8px rgba(255,255,255,0.4);
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+  }
+  .part {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+  }
+  button.like-btn {
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-shadow: 0 0 3px black;
+  }
+  .likes {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.9em;
+    color: #ffccff;
+    text-shadow: 0 0 3px #ff00ff;
+  }
+</style>
+</head>
+<body>
+<div class="overlay">
+  <h1>بسم الله الرحمن الرحیم</h1>
+  <div class="intro">سلام بنده میلاد حمیدی هستم امیدوارم که این داستان باعث سرگرمی و تفریحی شما بشه. دوستتون دارم ❤️</div>
+
+  <!-- مقدمه -->
+  <div class="part" id="part0">
+    <h2>مقدمه — آغاز نوسان</h2>
+    <p>سال ۲۱۴۷، زمین دیگر شبیه گذشته نبود. هفت دنیای موازی روی هم لغزیده بودند و مرز میان واقعیت و رویا شکسته بود. شهرهایی وجود داشت که نیمی در نور و نیمی در تاریکی مطلق غرق بودند. مردمان در این دنیا با موجوداتی زندگی می‌کردند که قانون فیزیک را به بازی می‌گرفتند. در این آشوب، امیری زندگی می‌کرد که سرنوشتش با یک راز کهکشانی گره خورده بود...</p>
+    <span class="likes" id="likes0">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(0)">پسندیدن</button>
+  </div>
+
+  <!-- قسمت‌ها -->
+  <div class="part" id="part1">
+    <h2>قسمت ۱ — اولین تماس</h2>
+    <p>نیمه‌شب بود و باد آرامی از پنجره شکسته اتاق امیر می‌وزید. ناگهان صدایی در ذهنش پیچید؛ نه از بیرون، بلکه از عمق افکارش. صدا آرام اما قدرتمند بود، مثل اینکه خود کهکشان دارد با او حرف می‌زند. امیر سرش را گرفت و به اطراف نگاه کرد، اما هیچ‌کس آنجا نبود. حس کرد که چیزی درونش بیدار شده است...</p>
+    <span class="likes" id="likes1">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(1)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part2">
+    <h2>قسمت ۲ — شکاف در آسمان</h2>
+    <p>صبح روز بعد، آسمان شهر دچار آشوبی عجیب شد. شکافی بنفش‌رنگ از میان ابرها گشوده شد و نوری که شبیه هیچ خورشیدی نبود از آن سرازیر شد. مردم به خیابان‌ها دویدند، اما امیر فقط ایستاد و خیره ماند. قلبش تند می‌زد، چون می‌دانست این همان چیزی است که شب قبل به او پیام داده بود...</p>
+    <span class="likes" id="likes2">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(2)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part3">
+    <h2>قسمت ۳ — پیام پنهان</h2>
+    <p>در دل نور، الگوهایی عجیب دیده می‌شدند؛ مثل کدهایی که روی یک پرده عظیم نوشته شده باشند. امیر به شکاف خیره شد و حس کرد این کدها را می‌فهمد، انگار همیشه درونش بوده‌اند. او شروع به یادداشت آن نشانه‌ها کرد و نمی‌دانست که این آغاز راهی بی‌بازگشت است...</p>
+    <span class="likes" id="likes3">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(3)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part4">
+    <h2>قسمت ۴ — سایه‌ها</h2>
+    <p>شب هنگام، امیر متوجه شد سایه‌هایی در خیابان‌ها حرکت می‌کنند که به هیچ جسمی تعلق ندارند. آن‌ها به سمتش نزدیک شدند، ولی قبل از اینکه بتوانند او را لمس کنند، نور بنفشی از دست‌های امیر ساطع شد و آن‌ها را عقب راند. او گیج و ترسیده بود...</p>
+    <span class="likes" id="likes4">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(4)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part5">
+    <h2>قسمت ۵ — راز پدر</h2>
+    <p>امیر به خانه برگشت و در میان وسایل قدیمی پدرش جعبه‌ای فلزی پیدا کرد. داخل آن یک دستگاه کوچک و یک نامه بود. نامه توضیح می‌داد که پدرش عضو گروهی مخفی برای محافظت از "دروازه‌های جهان" بوده است...</p>
+    <span class="likes" id="likes5">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(5)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part6">
+    <h2>قسمت ۶ — فعال‌سازی</h2>
+    <p>دستگاه درون جعبه با لمس انگشت امیر روشن شد. هولوگرامی از کهکشان ظاهر شد و نقاطی مشخص را نمایش داد. یکی از آن نقاط دقیقاً محل زندگی امیر بود...</p>
+    <span class="likes" id="likes6">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(6)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part7">
+    <h2>قسمت ۷ — عبور</h2>
+    <p>با فعال شدن دستگاه، در وسط اتاقش دریچه‌ای نورانی باز شد. امیر یک قدم جلو رفت و ناگهان حس کرد وزنش ناپدید شده است. او وارد جایی شد که نمی‌توانست نامی برایش پیدا کند...</p>
+    <span class="likes" id="likes7">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(7)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part8">
+    <h2>قسمت ۸ — شهر معلق</h2>
+    <p>امیر خود را در شهری یافت که در میان ابرها معلق بود. برج‌هایی شفاف و موجوداتی با بال‌های نورانی در اطراف پرواز می‌کردند. اما نگاه‌هایشان پر از سوال و بی‌اعتمادی بود...</p>
+    <span class="likes" id="likes8">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(8)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part9">
+    <h2>قسمت ۹ — دشمن ناشناس</h2>
+    <p>یکی از موجودات شهر به امیر هشدار داد که سایه‌ها او را تا اینجا دنبال کرده‌اند. آن‌ها به دنبال چیزی هستند که فقط او می‌تواند آن را بیدار کند. امیر باید انتخاب می‌کرد: فرار یا مقابله...</p>
+    <span class="likes" id="likes9">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(9)">پسندیدن</button>
+  </div>
+
+  <div class="part" id="part10">
+    <h2>قسمت ۱۰ — طلوع جدید</h2>
+    <p>با طلوع خورشیدِ دوگانه‌ی آن جهان، امیر در میدان شهر معلق ایستاده بود. دستش را بالا برد و نوری که از او ساطع شد سایه‌ها را نابود کرد. اما می‌دانست که این تازه آغاز سفرش در میان جهان‌هاست...</p>
+    <span class="likes" id="likes10">0 ❤️</span>
+    <button class="like-btn" onclick="likePart(10)">پسندیدن</button>
+  </div>
+
+</div>
+
+<script>
+function loadLikes() {
+  for (let i = 0; i <= 10; i++) {
+    let saved = localStorage.getItem('likes' + i);
+    document.getElementById('likes' + i).textContent = (saved ? saved : 0) + ' ❤️';
+  }
+}
+function likePart(num) {
+  let key = 'likes' + num;
+  let current = parseInt(localStorage.getItem(key) || '0');
+  localStorage.setItem(key, current + 1);
+  document.getElementById('likes' + num).textContent = (current + 1) + ' ❤️';
+}
+loadLikes();
+</script>
+</body>
+</html>
